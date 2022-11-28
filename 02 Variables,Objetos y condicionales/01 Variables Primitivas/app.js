@@ -3,8 +3,18 @@ var str="hola";
 var bol=true;
 var und=undefined;
 var nul=null;
+//puede tener tipos primitivos como onjetos
 var obj=
-{};
+{
+    nombre:"Andrey",
+    apellido:"Gonzalez",
+    // objeto hijo
+    obj_2 :{
+        nombre:"pedro",
+        apellido:"escamilla"
+    }
+};
+console.log(obj);
 var arr=[];
 var sym=Symbol();
 

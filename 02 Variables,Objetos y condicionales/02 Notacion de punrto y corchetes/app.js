@@ -18,23 +18,25 @@ var persona =
     }
 };
 // impresion en consola
-console.log(persona.nombre);
-console.log(persona.apellido);
-console.log(persona.edad);
-console.log(persona.direccion.calle);
+// console.log(persona.nombre);
+// console.log(persona.apellido);
+// console.log(persona.edad);
+// console.log(persona.direccion.calle);
 //***************************************** */
+//manera de agregar nuevos atributos.
 persona.direccion.zipcode=11111;
 
-console.log(persona.direccion.zipcode);
-console.log(persona.direccion);
+
+
+// console.log(persona.direccion.zipcode);
+// console.log(persona.direccion);
 //***************************************** */
-var edificio = persona.direccion.edificio;
+var _edificio = persona.direccion.edificio;
 
-//edificio.nopiso="8vo piso";
-
-console.log(persona);
+ console.log(persona);
 //**************************************************************** */
 var campo ="";
 
 // mejor manera de como decirle que campo necesito
-console.log( persona["nombre"] );
+console.log(persona["direccion"]["calle"]);//<- el primer cambo el nombre del objeto y el atributo que necesito
+console.log( persona["apellido"]  );
